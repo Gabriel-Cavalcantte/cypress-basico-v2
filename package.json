@@ -4,7 +4,10 @@
   "description": "Repositório da versão 2 do curso básico de Cypress da Escola Talking About Testing",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cy:open": "cypress open",
+    "cy:open:mobile": "cypress run --config viewportWidth=370 viewportHeight=660",
+    "cy:open:headless": "cypress open --config viewportWidth=370 viewportHeight=660",
+    "test": "cypress run "
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,14 @@
   ],
   "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev/)",
   "license": "MIT",
-  "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme"
+  "homepage": "https://github.com/wlsf82/cypress-basico-v2#readme",
+  "devDependencies": {
+    "audit": "^0.0.6",
+    "cypress": "^9.5.1",
+    "fix": "^0.0.6",
+    "npm": "^10.9.0"
+  },
+  "dependencies": {
+    "underscore.string": "^3.3.6"
+  }
 }
